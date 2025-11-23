@@ -16,19 +16,42 @@
     }
 
     h1 {
-        font-size: 2.5em;
-        margin-top: 20px;
+        font-size: 2.2em;
+        margin: 25px 0;
         text-shadow: 0 0 10px #00eaff;
     }
 
-    .gallery img, .gallery video {
-        width: 90%;
-        max-width: 600px;
-        margin: 20px auto;
-        display: block;
+    /* Responsive container */
+    .content-wrapper {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    /* Responsive images */
+    img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
         border: 2px solid #00eaff;
-        border-radius: 8px;
+        border-radius: 10px;
         box-shadow: 0 0 15px #00eaff;
+    }
+
+    /* Responsive autoplay videos */
+    video {
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+        border: 2px solid #00eaff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #00eaff;
+    }
+
+    footer {
+        margin: 40px 0;
+        font-size: 1em;
     }
 
     a {
@@ -45,9 +68,9 @@
 
 <h1>CORNELIUS AURELIUS</h1>
 
-<div class="gallery">
-
-    <!-- PNG FILES — AUTOMATICALLY ADDED -->
+<div class="content-wrapper">
+    
+    <!-- PNG CERTIFICATE IMAGES -->
     <img src="1.png">
     <img src="2.png">
     <img src="3.png">
@@ -71,15 +94,14 @@
     <img src="21.png">
     <img src="22.png">
 
-    <!-- VIDEOS -->
-    <video controls src="insta.mp4"></video>
-    <video controls src="insta (1).mp4"></video>
+    <!-- AUTOPLAY REELS (LOOP + MUTE + AUTOPLAY REQUIRED FOR MOBILE) -->
+    <video src="insta.mp4" autoplay muted loop playsinline></video>
+    <video src="insta (1).mp4" autoplay muted loop playsinline></video>
 
 </div>
 
-<footer style="margin:50px 0;">
+<footer>
     <p>© Cornelius Aurelius</p>
-
     <a href="https://corneliusaurelius.com/">Main Site</a> •
     <a href="https://medium.com/@138licensing">Medium</a> •
     <a href="mailto:138licensing@gmail.com">138licensing@gmail.com</a> •
